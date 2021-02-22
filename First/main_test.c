@@ -2,8 +2,7 @@
 #include <assert.h>
 
 void test_is_increasing() {
-   // assert(is_increasing(123) == 1);
-    assert(is_increasing(123) == 123);
+    assert(is_increasing(123) == 1);
     assert(is_increasing(122) == 0);
 }
 
