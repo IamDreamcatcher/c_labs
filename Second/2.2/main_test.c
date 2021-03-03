@@ -4,7 +4,7 @@
 
 #define eps 0.01
 
-void test_right_answer() {
+void test_right_answer_should_return_answer() {
     double first_left_answer = sin(1);
     int first_answer = right_answer(1, first_left_answer, eps);
     assert(first_answer == 2);
@@ -21,5 +21,5 @@ void test_right_answer() {
 
 #undef main
 int main() {
-    test_right_answer();
+    test_right_answer_should_return_answer();
 }
