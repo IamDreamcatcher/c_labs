@@ -48,4 +48,5 @@ int main() {
     printf("n = %d\n", answer);
     printf("Finish, press enter to exit");
     getchar();
+    return 0;
 }

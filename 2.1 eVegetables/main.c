@@ -92,4 +92,5 @@ int main() {
     }
     printf("Finish, press enter to exit");
     getchar();
+    return 0;
 }
