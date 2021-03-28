@@ -12,8 +12,7 @@ int get_int() {
     return x;
 }
 
-int** dynamic_array_alloc(int n, int m)
-{
+int** dynamic_array_alloc(int n, int m) {
     int** a;
     if ( !(a = (int**) malloc(n * sizeof(int*))) ) {
         printf("Error: can't allocate memory");
@@ -30,9 +29,8 @@ int** dynamic_array_alloc(int n, int m)
     return a;
 }
 
-void dynamic_array_free(int **a, int n)
-{
-    for(int i = 0; i < n; i++) {
+void dynamic_array_free(int **a, int n) {
+    for (int i = 0; i < n; i++) {
         free(a[i]);
     }
     free(a);
@@ -52,7 +50,7 @@ int main() {
     printf("Enter n: ");
     n = get_int();
     printf("Enter m: ");
-    m = get_int();   
+    m = get_int();
     a = dynamic_array_alloc(n, m);
     solve(a, n, m);
 
