@@ -34,6 +34,7 @@ void test_solve() {
             }
         }
     }
+    dynamic_array_free(a, 3);
 }
 
 #undef main
