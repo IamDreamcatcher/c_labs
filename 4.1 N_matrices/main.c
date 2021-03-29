@@ -13,18 +13,18 @@ int get_int() {
     return x;
 }
 
-bool is_palindrome(char string[]) {
+bool is_palindrome(char word[]) {
     bool palindrome = true;
-    int length = strlen(string); 
+    int length = strlen(word);
     int left = 0, right = length - 1;
     while (right > left) {
-        if (string[left] != string[right]) {
+        if (word[left] != word[right]) {
             palindrome = false;
             break;
         }
         left++;
         right--;
-    }    
+    }
     return palindrome;
 }
 int main() {
@@ -37,19 +37,18 @@ int main() {
         printf("Enter n: ");
         n = get_int();
         printf("Enter m: ");
-        m = get_int();    
+        m = get_int();
 
         for (i = 0; i < n; i++) {
             for (j = 0; j < m; j++) {
-                char string[1000];
-                scanf("%s", string);
-                bool palindrome = is_palindrome(string);
+                char word[1000];
+                scanf("%s", word);
+                bool palindrome = is_palindrome(word);
     
                 if (palindrome) {
                     printf("----- ");
-                }
-                else {
-                    printf("%s ", string);
+                } else {
+                    printf("%s ", word);
                 }
             }
             printf("\n");
