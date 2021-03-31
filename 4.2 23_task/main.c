@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
 
@@ -18,7 +19,7 @@ int count(char word[]) {
                 digit_ans += word[i] - '0';
             } else {
                 printf("Incorrect text");
-                return -1;
+                exit(-1);
             }
         }
     }
@@ -28,9 +29,22 @@ int count(char word[]) {
 }
 int main() {
     char word[10000];
-    FILE *f = fopen("input.txt", "r");
+    FILE *file = fopen("input.txt", "r");
+    if (file == NULL) {
+        printf("Input file is invalid");
+        exit(-1);
+    }
+
     int ans = 0;
-    while (fscanf(f, "%s", word) != EOF) {
+    for(;;) {
+        int resuslt = fscanf(file, "%s", word);     
+        if (resuslt == EOF) {
+            break;
+        }
+        if (resuslt != 1 || word[0] == 0) {
+            printf("Word isn't valid\n");
+            return 0;
+        }       
         ans += count(word); 
     }
     
@@ -42,3 +56,4 @@ int main() {
     getchar();
     return 0;
 }
+

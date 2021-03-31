@@ -14,18 +14,16 @@ int get_int() {
 }
 
 bool is_palindrome(char word[]) {
-    bool palindrome = true;
     int length = strlen(word);
     int left = 0, right = length - 1;
     while (right > left) {
         if (word[left] != word[right]) {
-            palindrome = false;
-            break;
+            return false;
         }
         left++;
         right--;
     }
-    return palindrome;
+    return true;
 }
 int main() {
     int number_of_matrices;
@@ -42,10 +40,12 @@ int main() {
         for (i = 0; i < n; i++) {
             for (j = 0; j < m; j++) {
                 char word[1000];
-                scanf("%s", word);
-                bool palindrome = is_palindrome(word);
+                if (scanf("%s", word) != 1 || word[0] == 0) {
+                    printf("Word isn't valid\n");
+                    return 0;
+                }
     
-                if (palindrome) {
+                if (is_palindrome(word)) {
                     printf("----- ");
                 } else {
                     printf("%s ", word);
@@ -55,6 +55,7 @@ int main() {
         }
 
     }
+
     getchar();
     return 0;
 }
