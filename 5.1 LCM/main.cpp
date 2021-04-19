@@ -13,7 +13,7 @@ vector<int> convert(string number) {
     }
     return convert_number;
 }
-void remove_leading_zeros(vector<int> number) {
+void remove_leading_zeros(vector<int>& number) {
     while (number.size() > 0 && number.back() == 0) {
         number.pop_back();
     }
@@ -44,7 +44,7 @@ vector<int> multiplication(vector<int> first_number, vector<int> second_number) 
                 add = 1ll * first_number[i] * second_number[j];
             }
             long long temp = answer[i + j] + add + carry;
-            answer[i + j] = temp % (int)10;
+            answer[i + j] = temp % 10;
             carry = temp / 10;
         }
     }
@@ -124,7 +124,7 @@ vector<int> solve(string first, string second) {
     return first_number;
 }
 
-bool is_corect(string& input) {
+bool is_corect(string input) {
     for (size_t i = 0; i < input.size(); i++) {
         if (!(input[i] >= '0' && input[i] <= '9')) {
             return false;
@@ -157,7 +157,6 @@ int main() {
     for (size_t i = 0; i < ans.size(); i++) {
         std::cout << ans[i];
     }
-
-   system("pause");
+    
     return 0;
 }
