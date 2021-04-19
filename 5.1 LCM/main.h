@@ -1,7 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#pragma once
 #include <vector>
 #include <string>
 
@@ -19,7 +18,5 @@ vector<int> division(vector<int> first_number, vector<int> second_number);
 vector<int> remainder_of_the_division(vector<int> first_number, vector<int> second_number);
 bool is_null(vector<int> number);
 bool is_corect(string input);
-
-
 
 #endif
