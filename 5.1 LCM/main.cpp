@@ -1,6 +1,5 @@
 #include <vector>
 #include <iostream>
-#include <stdlib.h>
 #include <algorithm>
 
 using std::vector;
@@ -157,6 +156,6 @@ int main() {
     for (size_t i = 0; i < ans.size(); i++) {
         std::cout << ans[i];
     }
-    
+        
     return 0;
 }
