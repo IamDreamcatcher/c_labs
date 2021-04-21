@@ -45,6 +45,6 @@ int main() {
         printf("%d ", vec[i]);
     }
     delete bin_tree;
-    getchar();    
+       
     return 0;
 }

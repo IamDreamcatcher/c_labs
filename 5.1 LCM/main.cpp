@@ -71,10 +71,13 @@ bool less_or_equal(vector<int> first_number, vector<int> second_number) {
     return true;
 }
 vector<int> division(vector<int> first_number, vector<int> second_number) {
+
     vector<int> current;
     string answer;
+
     for (int i = first_number.size() - 1; i >= 0; i--) {
         current.insert(current.begin(), first_number[i]);
+        remove_leading_zeros(current);
         int l = 0, r = 10;
         while (r - l > 1) {
             int mid = (l + r) / 2;
@@ -111,7 +114,7 @@ bool is_null(vector<int> number) {
 vector<int> solve(string first, string second) {
     vector <int> first_number = convert(first);
     vector <int> second_number = convert(second);
-
+    vector <int> temp = multiplication(first_number, second_number);
     if (less_or_equal(second_number, first_number)) {
         swap(second_number, first_number);
     }
@@ -120,7 +123,7 @@ vector<int> solve(string first, string second) {
         swap(first_number, second_number);
     }
 
-    return first_number;
+    return division(temp, first_number);
 }
 
 bool is_corect(string input) {
@@ -156,6 +159,6 @@ int main() {
     for (size_t i = 0; i < ans.size(); i++) {
         std::cout << ans[i];
     }
-        
+
     return 0;
 }
