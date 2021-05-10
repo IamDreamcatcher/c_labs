@@ -1,0 +1,37 @@
+Number in list: 1
+Name: Pexa
+Surname: Lirko
+Father Name: Sergeevich
+Total sum: 360
+Number in list: 2
+Name: NotPexa
+Surname: NotLirko
+Father Name: ButSergeevich
+Total sum: 304
+Number in list: 3
+Name: Alex
+Surname: Kek
+Father Name: Lol
+Total sum: 304
+Passing score is:305.0000
+Semi-passing score is:304.0000
+Number in list: 1
+Name: Pexa
+Surname: Lirko
+Father Name: Sergeevich
+Total sum: 360
+Number in list: 2
+Name: NotPexa
+Surname: NotLirko
+Father Name: ButSergeevich
+Total sum: 304
+Number in rating:1 Name of specialty:IAPT Rating of specialty:322.6667Number in list: 1
+Name: Pexa
+Surname: Lirko
+Father Name: Sergeevich
+Total sum: 360
+Number in list: 2
+Name: NotPexa
+Surname: NotLirko
+Father Name: ButSergeevich
+Total sum: 304

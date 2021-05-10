@@ -1,2 +1,5 @@
 /**/*.exe
 /**/target
+*.gcno
+*.gcda
+*.gcov
