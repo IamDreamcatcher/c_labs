@@ -35,3 +35,16 @@ Name: NotPexa
 Surname: NotLirko
 Father Name: ButSergeevich
 Total sum: 304
+Passing score is:304.0000
+Semi-passing score is:304.0000
+Number in list: 1
+Name: Pexa
+Surname: Lirko
+Father Name: Sergeevich
+Total sum: 360
+Number in list: 2
+Name: NotPexa
+Surname: NotLirko
+Father Name: ButSergeevich
+Total sum: 304
+Number in rating:1 Name of specialty:IAPT Rating of specialty:332.0000
