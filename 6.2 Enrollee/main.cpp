@@ -212,9 +212,7 @@ void print_menu() {
 void processing() {
     FILE* input = fopen("input.txt", "r");
     FILE* output = fopen("output.txt", "w"); 
-    if (input == NULL || output == NULL) {
-        exit(-1);
-    }
+    if (input == NULL || output == NULL) {exit(-1);}
     vector <specialty> specialties;
     get_university_information(specialties, input);
     while(!feof(input)) {

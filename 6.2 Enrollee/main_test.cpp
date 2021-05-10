@@ -7,9 +7,7 @@ void test_processing() {
     processing();
     FILE* result = fopen("result.txt", "r");
     FILE* output = fopen("output.txt", "r");
-    if (result == NULL || output == NULL) {
-        exit(-1);
-    }
+    if (result == NULL || output == NULL) {exit(-1);}
     
     char res[100];
     char out[100];
